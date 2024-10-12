@@ -10,7 +10,7 @@
     {
       name: 'Nick Darlow',
       role: CommitteeRole.Secretary,
-      portrait: 'nick.jpg'
+      portrait: 'nick_400.jpg'
     },
     {
       name: 'Es Collins',
@@ -22,7 +22,8 @@
     },
     {
       name: 'Dilushi Jayasingha (DJ)',
-      role: CommitteeRole.WelfareOfficer
+      role: CommitteeRole.WelfareOfficer,
+      portrait: 'dj_400.jpg'
     },
     {
       name: 'Hung Tran',
