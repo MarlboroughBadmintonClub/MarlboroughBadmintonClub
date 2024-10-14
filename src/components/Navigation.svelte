@@ -5,10 +5,10 @@
 </script>
 
 <nav>
-  <ul>
+  <ul class="space-y-4">
     {#each menuItems as item}
       <li>
-        <a class="flex items-center p-2" href={base + item.route}>
+        <a class="flex items-center" href={base + item.route}>
           <span>{item.name}</span>
         </a>
       </li>

@@ -27,7 +27,7 @@
 
 <div class="m-4">
   <header>
-    <div class="relative flex justify-center pt-1 pb-1">
+    <div class="relative flex justify-center p-2">
       <Logo />
     </div>
   </header>
@@ -45,7 +45,7 @@
     </aside>
 
     <main>
-      <div class="p-2 max-w-7xl space-y-4">
+      <div class="max-w-7xl space-y-4">
         <slot />
       </div>
     </main>
