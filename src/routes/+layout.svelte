@@ -15,6 +15,10 @@
 
   const menuItems: MenuItem[] = [
     {
+      name: 'Club',
+      route: '/club'
+    },
+    {
       name: 'History',
       route: '/history'
     },
@@ -37,7 +41,7 @@
       <nav class="hidden md:block w-64">
         <Navigation {menuItems} />
       </nav>
-      <div class="p-2">
+      <div class="p-2 max-w-7xl space-y-4">
         <slot />
       </div>
     </div>
