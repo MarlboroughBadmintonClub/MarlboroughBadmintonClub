@@ -9,17 +9,11 @@
 
   const toggleOpen = () => {
     isOpen = !isOpen;
-    buttonLabel = isOpen ? closeLabel : openLabel
+    buttonLabel = isOpen ? closeLabel : openLabel;
   };
 </script>
 
-<button 
-  class="md:hidden absolute left-2 top-2 p-3 z-30" 
-  on:click={toggleOpen} 
-  aria-label={buttonLabel} 
-  aria-controls="mobile-nav"
-  aria-expanded={isOpen}
->
+<button class="md:hidden absolute left-2 top-2 p-3 z-30" on:click={toggleOpen} aria-label={buttonLabel} aria-controls="mobile-nav" aria-expanded={isOpen}>
   {#if isOpen}
     <CircleX class="w-10 h-10" />
   {:else}
@@ -28,12 +22,7 @@
 </button>
 
 <nav class="md:hidden">
-  <div 
-    hidden={!isOpen} 
-    class="fixed inset-0 bg-gray-50 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-50 z-10" 
-    on:click={toggleOpen} 
-    aria-hidden="true" 
-  />
+  <div hidden={!isOpen} class="fixed inset-0 bg-gray-50 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-50 z-10" on:click={toggleOpen} aria-hidden="true" />
 
   {#if isOpen}
     <div
