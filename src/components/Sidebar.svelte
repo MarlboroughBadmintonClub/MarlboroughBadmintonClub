@@ -7,7 +7,7 @@
   const closeLabel = 'Close menu';
   let buttonLabel = openLabel;
 
-  const toggleOpen = () => {
+  export const toggleOpen = () => {
     isOpen = !isOpen;
     buttonLabel = isOpen ? closeLabel : openLabel;
   };

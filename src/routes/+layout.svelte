@@ -27,6 +27,12 @@
       route: '/committee'
     }
   ];
+
+  let sidebar: Sidebar;
+
+  function toggleSidebar() {
+    sidebar.toggleOpen();
+  }
 </script>
 
 <div class="m-4">
@@ -47,7 +53,7 @@
     </div>
   </main>
 
-  <Sidebar>
-    <Navigation {menuItems} />
+  <Sidebar bind:this={sidebar}>
+    <Navigation {menuItems} {toggleSidebar} />
   </Sidebar>
 </div>
