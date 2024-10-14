@@ -23,12 +23,6 @@
       route: '/committee'
     }
   ];
-
-  let sidebar: Sidebar;
-
-  function toggleSidebar() {
-    sidebar.toggleOpen();
-  }
 </script>
 
 <div class="m-4">
@@ -40,16 +34,18 @@
 
   <main>
     <div class="flex p-2">
-      <nav class="hidden md:block w-64">
+      <div class="hidden md:block w-64">
         <Navigation {menuItems} />
-      </nav>
+      </div>
       <div class="p-2 max-w-7xl space-y-4">
         <slot />
       </div>
     </div>
   </main>
 
-  <Sidebar bind:this={sidebar}>
-    <Navigation {menuItems} {toggleSidebar} />
-  </Sidebar>
+  <aside class="md:hidden">
+    <Sidebar>
+      <Navigation {menuItems} />
+    </Sidebar>
+  </aside>
 </div>
