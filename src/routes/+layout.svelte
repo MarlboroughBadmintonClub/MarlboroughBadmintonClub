@@ -32,20 +32,22 @@
     </div>
   </header>
 
-  <main>
-    <div class="flex p-2">
+  <div class="flex p-2">
+    <aside>
       <div class="hidden md:block w-64">
         <Navigation {menuItems} />
       </div>
+      <div class="md:hidden">
+        <Sidebar>
+          <Navigation {menuItems} />
+        </Sidebar>
+      </div>
+    </aside>
+
+    <main>
       <div class="p-2 max-w-7xl space-y-4">
         <slot />
       </div>
-    </div>
-  </main>
-
-  <aside class="md:hidden">
-    <Sidebar>
-      <Navigation {menuItems} />
-    </Sidebar>
-  </aside>
+    </main>
+  </div>
 </div>
