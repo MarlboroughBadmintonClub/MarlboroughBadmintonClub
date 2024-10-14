@@ -4,14 +4,12 @@
   export let menuItems: MenuItem[] = [];
 </script>
 
-<nav>
-  <ul>
-    {#each menuItems as item}
-      <li>
-        <a class="flex items-center p-2" href={base + item.route}>
-          <span>{item.name}</span>
-        </a>
-      </li>
-    {/each}
-  </ul>
-</nav>
+<ul>
+  {#each menuItems as item}
+    <li>
+      <button class="flex items-center p-2" on:click={() => goto(base + item.route)}>
+        <span>{item.name}</span>
+      </button>
+    </li>
+  {/each}
+</ul>
