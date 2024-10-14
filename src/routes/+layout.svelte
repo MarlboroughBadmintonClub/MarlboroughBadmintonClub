@@ -19,10 +19,6 @@
       route: '/club'
     },
     {
-      name: 'History',
-      route: '/history'
-    },
-    {
       name: 'Committee',
       route: '/committee'
     }
