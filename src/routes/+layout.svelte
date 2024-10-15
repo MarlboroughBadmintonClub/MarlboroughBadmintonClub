@@ -15,12 +15,20 @@
 
   const menuItems: MenuItem[] = [
     {
-      name: 'Club',
-      route: '/club'
+      name: 'About',
+      route: '/about'
     },
     {
       name: 'Committee',
       route: '/committee'
+    },
+    {
+      name: 'Membership',
+      route: '/membership'
+    },
+    {
+      name: 'History',
+      route: '/history'
     }
   ];
 </script>
