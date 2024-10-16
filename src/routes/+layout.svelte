@@ -33,7 +33,7 @@
   ];
 </script>
 
-<div class="m-4">
+<div class="flex flex-col px-4 lg:max-w-7xl lg:mx-auto">
   <header>
     <div class="relative flex justify-center p-2">
       <Logo />
@@ -53,7 +53,7 @@
     </aside>
 
     <main>
-      <div class="max-w-7xl space-y-4">
+      <div class="space-y-4">
         <slot />
       </div>
     </main>
