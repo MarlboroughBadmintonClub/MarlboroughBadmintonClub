@@ -1,4 +1,4 @@
-<h2>Membership</h2>
+<h1>Membership</h1>
 
 <p>All players are required to be members. Players may attend club nights as a guest member for up to 6 visits before joining.</p>
 
