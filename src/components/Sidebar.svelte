@@ -18,7 +18,7 @@
 </button>
 
 {#if isOpen}
-  <div class="fixed inset-0 bg-gray-50 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-50 z-10" on:click={toggleOpen} aria-hidden="true" />
+  <div class="fixed inset-0 bg-gray-50 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-50 z-10" on:click={toggleOpen} aria-hidden="true"></div>
 
   <div
     class="fixed top-0 left-0 w-64 bg-gray-100 dark:bg-gray-800 h-full shadow-lg z-20 p-6 transform"

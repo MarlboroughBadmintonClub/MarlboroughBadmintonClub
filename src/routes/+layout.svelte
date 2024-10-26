@@ -1,17 +1,11 @@
 <script lang="ts">
   import '../app.postcss';
 
-  // Floating UI for Popups
-  import { arrow, autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom';
-  import { storePopup } from '@skeletonlabs/skeleton';
-
   import Logo from '../components/Logo.svelte';
   import Navigation from '../components/Navigation.svelte';
   import Sidebar from '../components/Sidebar.svelte';
 
   import type { MenuItem } from '../types';
-
-  storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
   const menuItems: MenuItem[] = [
     {
