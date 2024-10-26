@@ -3,7 +3,11 @@
   import { UserRound } from 'lucide-svelte';
   import { base } from '$app/paths';
 
-  export let member: CommitteeMember;
+  interface Props {
+    member: CommitteeMember;
+  }
+
+  let { member }: Props = $props();
 
   const portraitPath = `${base}/portraits/${member.portrait}`;
 

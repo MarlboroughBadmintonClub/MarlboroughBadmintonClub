@@ -1,7 +1,12 @@
 <script lang="ts">
   import type { MenuItem } from '../types';
   import { base } from '$app/paths';
-  export let menuItems: MenuItem[] = [];
+
+  interface Props {
+    menuItems?: MenuItem[];
+  }
+
+  let { menuItems = [] }: Props = $props();
 </script>
 
 <nav>

@@ -7,6 +7,12 @@
 
   import type { MenuItem } from '../types';
 
+  interface Props {
+    children?: import('svelte').Snippet;
+  }
+
+  let { children }: Props = $props();
+
   const menuItems: MenuItem[] = [
     {
       name: 'About',
@@ -48,7 +54,7 @@
 
     <main>
       <div class="space-y-4">
-        <slot />
+        {@render children?.()}
       </div>
     </main>
   </div>
