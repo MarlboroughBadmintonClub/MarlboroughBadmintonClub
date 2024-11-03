@@ -8,8 +8,10 @@
   <img src={`${base}/images/courts_1_2.jpg`} alt="Courts 1 & 2" />
 </div>
 
-We are a competitive and social badminton club in Banbury, Oxfordshire. Our players have a wide range of abilities including beginners. We mix up playing
-partners to ensure enjoyable and balanced games for all.
+<p>
+  We are a competitive and social badminton club in Banbury, Oxfordshire. Our players have a wide range of abilities including beginners. We mix up playing
+  partners to ensure enjoyable and balanced games for all.
+</p>
 
 <div class="flex p-4 items-center justify-center">
   <img src={`${base}/images/courts_3_4.jpg`} alt="Courts 3 & 4" />

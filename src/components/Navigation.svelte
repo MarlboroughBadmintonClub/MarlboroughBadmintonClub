@@ -12,7 +12,7 @@
 <nav>
   <ul class="space-y-4">
     {#each menuItems as item}
-      <li>
+      <li class="flex items-center h-full justify-center md:justify-normal min-h-12">
         <a class="flex items-center" href={base + item.route}>
           <span>{item.name}</span>
         </a>

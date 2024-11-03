@@ -3,7 +3,7 @@
 
   import Logo from '../components/Logo.svelte';
   import Navigation from '../components/Navigation.svelte';
-  import Sidebar from '../components/Sidebar.svelte';
+  import BottomBar from '../components/BottomBar.svelte';
 
   import type { MenuItem } from '../types';
 
@@ -33,22 +33,17 @@
   ];
 </script>
 
-<div class="flex flex-col px-4 lg:max-w-7xl lg:mx-auto">
+<div class="flex flex-col p-6 max-w-screen-2xl mx-auto">
   <header>
-    <div class="relative flex justify-center p-2">
+    <div class="flex justify-center">
       <Logo />
     </div>
   </header>
 
-  <div class="flex p-2">
+  <div class="flex pt-4 pb-20">
     <aside>
-      <div class="hidden md:block w-64">
+      <div class="w-64 hidden md:block">
         <Navigation {menuItems} />
-      </div>
-      <div class="md:hidden">
-        <Sidebar>
-          <Navigation {menuItems} />
-        </Sidebar>
       </div>
     </aside>
 
@@ -58,4 +53,10 @@
       </div>
     </main>
   </div>
+
+  <footer class="bg-default fixed bottom-0 left-0 right-0 h-20 max-w-screen-2xl mx-auto md:hidden">
+    <BottomBar>
+      <Navigation {menuItems} />
+    </BottomBar>
+  </footer>
 </div>
