@@ -30,7 +30,8 @@
       role: CommitteeRole.SocialSecretary
     },
     {
-      name: 'Phil Hassell'
+      name: 'Phil Hassell',
+      portrait: 'phil_400.jpg'
     },
     {
       name: 'Ruta Seske'
