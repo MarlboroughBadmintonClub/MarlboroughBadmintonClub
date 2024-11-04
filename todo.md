@@ -1,4 +1,5 @@
 # ToDo
 
-- Move menu to the bottom of the screen to ease one handed navigation
-- Add contact form
+- Contact form
+- Frequently asked questions
+- News feed
