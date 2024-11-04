@@ -18,9 +18,9 @@
 <div class="relative flex items-center justify-center h-full z-30">
   <button class="p-2" onclick={toggleOpen}>
     {#if isOpen}
-      <CircleX class="w-12 h-12" aria-label="Close menu" />
+      <CircleX size="50" aria-label="Close menu" />
     {:else}
-      <Menu class="w-12 h-12" aria-label="Open menu" />
+      <Menu size="50" aria-label="Open menu" />
     {/if}
   </button>
 </div>
