@@ -26,10 +26,10 @@
 </div>
 
 {#if isOpen}
-  <div class="fixed inset-0 bg-gray-50 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-50 z-10" onclick={toggleOpen} aria-hidden="true"></div>
+  <div class="fixed inset-0 bg-inactive z-10" onclick={toggleOpen} aria-hidden="true"></div>
 
   <div
-    class="fixed bottom-0 left-0 right-0 bg-gray-100 dark:bg-gray-800 shadow-lg z-20 p-4 pb-20 transform"
+    class="fixed bottom-0 left-0 right-0 bg-active shadow-lg z-20 p-4 pb-20 transform"
     in:fly={{ y: 300, duration: 300 }}
     out:fly={{ y: 300, duration: 300 }}
     onclick={toggleOpen}
