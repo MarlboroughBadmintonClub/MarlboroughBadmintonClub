@@ -47,7 +47,7 @@
     <BottomBar>
       <ToggleButton bind:toggled={bottomNavOpen} icon={Menu} />
       {#if showContactFormButton}
-        <ToggleButton bind:toggled={contactFormOpen} icon={MailPlus} />
+        <ToggleButton bind:toggled={contactFormOpen} icon={MailPlus} size={44} />
       {/if}
     </BottomBar>
 
