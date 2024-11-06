@@ -5,32 +5,11 @@
   import Navigation from '../components/Navigation.svelte';
   import BottomBar from '../components/BottomBar.svelte';
 
-  import type { MenuItem } from '../types';
-
   interface Props {
     children?: import('svelte').Snippet;
   }
 
   let { children }: Props = $props();
-
-  const menuItems: MenuItem[] = [
-    {
-      name: 'About',
-      route: '/about'
-    },
-    {
-      name: 'Committee',
-      route: '/committee'
-    },
-    {
-      name: 'Membership',
-      route: '/membership'
-    },
-    {
-      name: 'History',
-      route: '/history'
-    }
-  ];
 </script>
 
 <div class="flex flex-col p-6 max-w-screen-2xl mx-auto">
@@ -43,7 +22,7 @@
   <div class="flex pt-4 pb-20">
     <aside>
       <div class="w-64 hidden md:block">
-        <Navigation {menuItems} />
+        <Navigation />
       </div>
     </aside>
 
@@ -56,7 +35,7 @@
 
   <footer class="bg-default fixed bottom-0 left-0 right-0 h-20 max-w-screen-2xl mx-auto md:hidden">
     <BottomBar>
-      <Navigation {menuItems} />
+      <Navigation />
     </BottomBar>
   </footer>
 </div>

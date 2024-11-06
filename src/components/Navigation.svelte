@@ -1,12 +1,29 @@
 <script lang="ts">
-  import type { MenuItem } from '../types';
   import { base } from '$app/paths';
 
-  interface Props {
-    menuItems?: MenuItem[];
+  interface MenuItem {
+    name: string;
+    route: string;
   }
 
-  let { menuItems = [] }: Props = $props();
+  const menuItems: MenuItem[] = [
+    {
+      name: 'About',
+      route: '/about'
+    },
+    {
+      name: 'Committee',
+      route: '/committee'
+    },
+    {
+      name: 'Membership',
+      route: '/membership'
+    },
+    {
+      name: 'History',
+      route: '/history'
+    }
+  ];
 </script>
 
 <nav>
