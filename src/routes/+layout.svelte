@@ -1,10 +1,11 @@
 <script lang="ts">
   import '../app.postcss';
 
-  import { Menu } from 'lucide-svelte';
+  import { MailPlus, Menu } from 'lucide-svelte';
 
   import BottomBar from '../components/BottomBar.svelte';
   import BottomPopUp from '../components/BottomPopUp.svelte';
+  import ContactForm from '../components/ContactForm.svelte';
   import Logo from '../components/Logo.svelte';
   import Navigation from '../components/Navigation.svelte';
   import ToggleButton from '../components/ToggleButton.svelte';
@@ -16,6 +17,9 @@
   let { children }: Props = $props();
 
   let bottomNavOpen = $state(false);
+  let contactFormOpen = $state(false);
+
+  let showContactFormButton = process.env.NODE_ENV === 'development';
 </script>
 
 <div class="flex flex-col p-6 max-w-screen-2xl mx-auto">
@@ -42,10 +46,17 @@
   <footer class="bg-default fixed bottom-0 left-0 right-0 h-20 max-w-screen-2xl mx-auto md:hidden">
     <BottomBar>
       <ToggleButton bind:toggled={bottomNavOpen} icon={Menu} />
+      {#if showContactFormButton}
+        <ToggleButton bind:toggled={contactFormOpen} icon={MailPlus} />
+      {/if}
     </BottomBar>
 
-    <BottomPopUp bind:open={bottomNavOpen}>
+    <BottomPopUp bind:open={bottomNavOpen} closeOnClick>
       <Navigation />
+    </BottomPopUp>
+
+    <BottomPopUp bind:open={contactFormOpen}>
+      <ContactForm />
     </BottomPopUp>
   </footer>
 </div>

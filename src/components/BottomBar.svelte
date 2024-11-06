@@ -6,6 +6,6 @@
   let { children }: Props = $props();
 </script>
 
-<div class="relative flex items-center justify-center h-full z-30">
+<div class="relative flex items-center justify-center h-full space-x-8 z-30">
   {@render children?.()}
 </div>
