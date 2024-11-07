@@ -1,31 +1,25 @@
 <script lang="ts">
-  let name = '';
-  let email = '';
-  let message = '';
+  import TextEntry from './TextEntry.svelte';
+
+  let name = $state('');
+  let email = $state('');
+  let message = $state('');
 
   const handleSubmit = (e: Event) => {
     e.preventDefault();
     console.log(name, email, message);
   };
+
+  let sendDisabled = $derived(!name || !email || !message);
+  let sendBackground = $derived(sendDisabled ? 'bg-gray-600' : 'bg-blue-500');
 </script>
 
-<h1>Contact Us</h1>
+<h1 class="pb-4">Contact Us</h1>
 
-<form onsubmit={handleSubmit}>
-  <div>
-    <label for="name" class="block text-sm font-medium">Name</label>
-    <input type="text" id="name" bind:value={name} class="mt-1 block w-full border border-gray-300 p-2 rounded-md" required />
-  </div>
+<form class="space-y-4" onsubmit={handleSubmit}>
+  <TextEntry name="Name" bind:value={name} />
+  <TextEntry name="Email" bind:value={email} type="email" />
+  <TextEntry name="Message" bind:value={message} type="textarea" />
 
-  <div>
-    <label for="email" class="block text-sm font-medium">Email</label>
-    <input type="email" id="email" bind:value={email} class="mt-1 block w-full border border-gray-300 p-2 rounded-md" required />
-  </div>
-
-  <div>
-    <label for="message" class="block text-sm font-medium">Message</label>
-    <textarea id="message" bind:value={message} class="mt-1 block w-full border border-gray-300 p-2 rounded-md" rows="4" required></textarea>
-  </div>
-
-  <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 rounded-md"> Submit </button>
+  <button type="submit" class="w-full {sendBackground} py-4 rounded-md" disabled={sendDisabled}>Send </button>
 </form>
