@@ -9,6 +9,8 @@
   import Logo from '../components/Logo.svelte';
   import Navigation from '../components/Navigation.svelte';
   import ToggleButton from '../components/ToggleButton.svelte';
+  import ContactButton from '../components/ContactButton.svelte';
+  import CenterPopUp from '../components/CenterPopUp.svelte';
 
   interface Props {
     children?: import('svelte').Snippet;
@@ -17,7 +19,8 @@
   let { children }: Props = $props();
 
   let bottomNavOpen = $state(false);
-  let contactFormOpen = $state(false);
+  let bottomContactFormOpen = $state(false);
+  let centerContactFormOpen = $state(false);
 
   let showContactFormButton = process.env.NODE_ENV === 'development';
 </script>
@@ -33,7 +36,14 @@
     <aside>
       <div class="w-64 hidden md:block">
         <Navigation />
+        <ContactButton onclick={() => (centerContactFormOpen = true)} />
       </div>
+
+      {#if showContactFormButton}
+        <CenterPopUp bind:open={centerContactFormOpen}>
+          <ContactForm />
+        </CenterPopUp>
+      {/if}
     </aside>
 
     <main>
@@ -47,7 +57,7 @@
     <BottomBar>
       <ToggleButton bind:toggled={bottomNavOpen} icon={Menu} />
       {#if showContactFormButton}
-        <ToggleButton bind:toggled={contactFormOpen} icon={MailPlus} size={44} />
+        <ToggleButton bind:toggled={bottomContactFormOpen} icon={MailPlus} size={44} />
       {/if}
     </BottomBar>
 
@@ -55,7 +65,7 @@
       <Navigation />
     </BottomPopUp>
 
-    <BottomPopUp bind:open={contactFormOpen}>
+    <BottomPopUp bind:open={bottomContactFormOpen}>
       <ContactForm />
     </BottomPopUp>
   </footer>

@@ -16,7 +16,7 @@
 
 <h1 class="pb-4">Contact Us</h1>
 
-<form class="space-y-4" onsubmit={handleSubmit}>
+<form class="w-full space-y-4" onsubmit={handleSubmit}>
   <TextEntry name="Name" bind:value={name} />
   <TextEntry name="Email" bind:value={email} type="email" />
   <TextEntry name="Message" bind:value={message} type="textarea" />
