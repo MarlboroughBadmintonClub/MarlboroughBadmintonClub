@@ -21,8 +21,6 @@
   let bottomNavOpen = $state(false);
   let bottomContactFormOpen = $state(false);
   let centerContactFormOpen = $state(false);
-
-  let showContactFormButton = process.env.NODE_ENV === 'development';
 </script>
 
 <div class="flex flex-col p-6 max-w-screen-2xl mx-auto">
@@ -36,10 +34,7 @@
     <aside>
       <div class="w-64 hidden md:block">
         <Navigation />
-
-        {#if showContactFormButton}
-          <ContactButton onclick={() => (centerContactFormOpen = true)} />
-        {/if}
+        <ContactButton onclick={() => (centerContactFormOpen = true)} />
       </div>
 
       <CenterPopUp bind:open={centerContactFormOpen}>
@@ -57,9 +52,7 @@
   <footer class="bg-default fixed bottom-0 left-0 right-0 h-20 max-w-screen-2xl mx-auto md:hidden">
     <BottomBar>
       <ToggleButton bind:toggled={bottomNavOpen} icon={Menu} />
-      {#if showContactFormButton}
-        <ToggleButton bind:toggled={bottomContactFormOpen} icon={MailPlus} size={44} />
-      {/if}
+      <ToggleButton bind:toggled={bottomContactFormOpen} icon={MailPlus} size={44} />
     </BottomBar>
 
     <BottomPopUp bind:open={bottomNavOpen} closeOnClick>
