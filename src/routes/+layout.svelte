@@ -36,14 +36,15 @@
     <aside>
       <div class="w-64 hidden md:block">
         <Navigation />
-        <ContactButton onclick={() => (centerContactFormOpen = true)} />
+
+        {#if showContactFormButton}
+          <ContactButton onclick={() => (centerContactFormOpen = true)} />
+        {/if}
       </div>
 
-      {#if showContactFormButton}
-        <CenterPopUp bind:open={centerContactFormOpen}>
-          <ContactForm />
-        </CenterPopUp>
-      {/if}
+      <CenterPopUp bind:open={centerContactFormOpen}>
+        <ContactForm />
+      </CenterPopUp>
     </aside>
 
     <main>
