@@ -19,7 +19,7 @@
   <div class="fixed inset-0 bg-inactive z-10" onclick={close} aria-hidden="true"></div>
 
   <div
-    class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-active shadow-lg z-20 p-6 rounded-md w-[90%] max-w-xl"
+    class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-active z-20 p-6 rounded-md w-[90%] max-w-xl"
     in:fade={{ duration: 300 }}
     out:fade={{ duration: 300 }}
     onclick={() => {
