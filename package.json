@@ -39,6 +39,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "lucide-svelte": "^0.453.0"
   }
 }
