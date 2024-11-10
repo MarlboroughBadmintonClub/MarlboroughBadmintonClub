@@ -38,7 +38,7 @@
       </div>
 
       <CenterPopUp bind:open={centerContactFormOpen}>
-        <ContactForm close={() => (centerContactFormOpen = false)} />
+        <ContactForm />
       </CenterPopUp>
     </aside>
 
@@ -60,7 +60,7 @@
     </BottomPopUp>
 
     <BottomPopUp bind:open={bottomContactFormOpen}>
-      <ContactForm close={() => (bottomContactFormOpen = false)} />
+      <ContactForm />
     </BottomPopUp>
   </footer>
 </div>
