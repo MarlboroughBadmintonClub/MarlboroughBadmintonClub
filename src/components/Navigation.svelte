@@ -16,12 +16,16 @@
       route: '/committee'
     },
     {
+      name: 'History',
+      route: '/history'
+    },
+    {
       name: 'Membership',
       route: '/membership'
     },
     {
-      name: 'History',
-      route: '/history'
+      name: 'News',
+      route: '/news'
     }
   ];
 </script>
