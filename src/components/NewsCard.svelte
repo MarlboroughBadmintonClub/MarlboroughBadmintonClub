@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import type { NewsItem } from '../interfaces/NewsItem';
 
   interface Props {
@@ -14,6 +15,6 @@
   <p class="text-sm">{date.toLocaleDateString()}</p>
   <h2 class="pt-2">{item.title}</h2>
   {#if item.imagePath}
-    <img src={item.imagePath} alt={item.title} class="pt-4 w-full" />
+    <img src={base + item.imagePath} alt={item.title} class="pt-4 w-full" />
   {/if}
 </div>

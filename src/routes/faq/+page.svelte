@@ -1,6 +1,6 @@
 <script>
-  import TextBlock from '../../components/PaddedBlock.svelte';
   import { base } from '$app/paths';
+  import TextBlock from '../../components/PaddedBlock.svelte';
 </script>
 
 <h1>FAQ</h1>

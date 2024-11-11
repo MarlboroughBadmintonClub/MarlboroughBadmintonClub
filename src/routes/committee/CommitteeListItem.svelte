@@ -1,7 +1,7 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import { type CommitteeMember, CommitteeRole } from './CommitteeMember';
   import { UserRound } from 'lucide-svelte';
-  import { base } from '$app/paths';
 
   interface Props {
     member: CommitteeMember;
