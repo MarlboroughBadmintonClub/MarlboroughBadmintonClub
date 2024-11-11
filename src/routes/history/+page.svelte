@@ -24,14 +24,13 @@
 <PaddedBlock>
   <p>
     Looking for more courts the club re-sited at Blessed George Napier School for a number of years before moving to the newly built Spiceball Park Sports
-    Centre in the late-70's. Over the following years membership was strong with the club fielding many teams in the local leagues. As the 1990's drew to a
-    close and many had to be more mobile with their jobs, rapid reductions in membership lead to lean years and reduced interest.
+    Centre in the late-70's. Over the following years membership was strong with the club fielding many teams in the local leagues.
   </p>
 </PaddedBlock>
 
 <PaddedBlock>
   <p>
     With the closure and rebuild of the Spiceball Park Sports Centre in 2010 the club moved back to the Blessed George Napier School and into their newly built
-    sports hall which is where you will find us today.
+    sports hall which is where you will find us today. Currently we have over 40 members and continue to grow.
   </p>
 </PaddedBlock>
