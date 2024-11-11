@@ -10,7 +10,7 @@
   let date = $derived(new Date(item.date));
 </script>
 
-<div class="border border-gray-600 rounded-md p-4">
+<div class="border border-gray-500 rounded-md p-4">
   <p class="text-sm">{date.toLocaleDateString()}</p>
   <h2 class="pt-2">{item.title}</h2>
   {#if item.imagePath}

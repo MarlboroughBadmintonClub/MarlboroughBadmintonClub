@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { NewsItem } from '../../interfaces/NewsItem';
   import NewsCard from '../../components/NewsCard.svelte';
+  import PaddedBlock from '../../components/PaddedBlock.svelte';
 
   let newsItems: NewsItem[] = [
     {
@@ -17,6 +18,8 @@
 
 <h1>News</h1>
 
-{#each newsItems as item}
-  <NewsCard {item} />
-{/each}
+<PaddedBlock>
+  {#each newsItems as item}
+    <NewsCard {item} />
+  {/each}
+</PaddedBlock>

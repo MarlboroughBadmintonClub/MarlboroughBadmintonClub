@@ -16,6 +16,10 @@
       route: '/committee'
     },
     {
+      name: 'FAQ',
+      route: '/faq'
+    },
+    {
       name: 'History',
       route: '/history'
     },
