@@ -1,12 +1,13 @@
 <script>
   import TextBlock from '../../components/PaddedBlock.svelte';
+  import { base } from '$app/paths';
 </script>
 
 <h1>FAQ</h1>
 
 <TextBlock>
   <h2>Where do you play, at what time and how much does it cost?</h2>
-  <p>See the <a class="text-blue-500" href="/about">About</a> section.</p>
+  <p>See the <a class="text-blue-500" href={base + '/about'}>About</a> section.</p>
 </TextBlock>
 
 <TextBlock>
