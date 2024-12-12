@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { base } from '$app/paths';
   import { type CommitteeMember, CommitteeRole } from './CommitteeMember';
   import { UserRound } from 'lucide-svelte';
 
@@ -9,7 +8,7 @@
 
   let { member }: Props = $props();
 
-  const portraitPath = `${base}/portraits/${member.portrait}`;
+  const portraitPath = `/portraits/${member.portrait}`;
 
   function roleToString(role: CommitteeRole) {
     switch (role) {

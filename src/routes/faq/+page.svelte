@@ -1,5 +1,4 @@
 <script>
-  import { base } from '$app/paths';
   import TextBlock from '../../components/PaddedBlock.svelte';
 </script>
 
@@ -7,7 +6,7 @@
 
 <TextBlock>
   <h2>Where do you play, at what time and how much does it cost?</h2>
-  <p>See the <a class="text-blue-500" href={base + '/about'}>About</a> section.</p>
+  <p>See the <a class="text-blue-500" href={'/about'}>About</a> section.</p>
 </TextBlock>
 
 <TextBlock>

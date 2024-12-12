@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { base } from '$app/paths';
   import PaddedBlock from '../../components/PaddedBlock.svelte';
 </script>
 
@@ -7,7 +6,7 @@
 
 <PaddedBlock>
   <div class="flex pb-4 items-center justify-center">
-    <img src={`${base}/images/courts_1_2.jpg`} alt="Courts 1 & 2" />
+    <img src={'/images/courts_1_2.jpg'} alt="Courts 1 & 2" />
   </div>
 
   <p>
@@ -16,7 +15,7 @@
   </p>
 
   <div class="flex pt-4 items-center justify-center">
-    <img src={`${base}/images/courts_3_4.jpg`} alt="Courts 3 & 4" />
+    <img src={'/images/courts_3_4.jpg'} alt="Courts 3 & 4" />
   </div>
 </PaddedBlock>
 
