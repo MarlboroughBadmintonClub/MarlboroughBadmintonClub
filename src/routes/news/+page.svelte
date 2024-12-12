@@ -5,13 +5,20 @@
 
   let newsItems: NewsItem[] = [
     {
-      date: '2024-11-11',
-      title: 'Marlborough badminton club has a new website',
-      imagePath: '/images/website.jpg'
+      date: '2025-01-09',
+      title: 'First club night of 2025'
     },
     {
-      date: '2024-11-01',
-      title: '2023 insurance cover expires'
+      date: '2024-12-19',
+      title: 'Last club night of 2024'
+    },
+    {
+      date: '2024-12-14',
+      title: 'Christmas meal at the Pinto Lounge starting at 5pm'
+    },
+    {
+      date: '2024-12-09',
+      title: 'New website goes live'
     }
   ];
 </script>
