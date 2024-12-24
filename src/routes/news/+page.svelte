@@ -10,15 +10,13 @@
     },
     {
       date: '2024-12-19',
-      title: 'Last club night of 2024'
+      title: 'Last club night of 2024',
+      link: 'https://flic.kr/s/aHBqjBVZsD',
+      linkText: 'Photos'
     },
     {
       date: '2024-12-14',
-      title: 'Christmas meal at the Pinto Lounge starting at 5pm'
-    },
-    {
-      date: '2024-12-09',
-      title: 'New website goes live'
+      title: 'Christmas meal'
     }
   ];
 </script>
