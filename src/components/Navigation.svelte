@@ -24,10 +24,6 @@
     {
       name: 'Membership',
       route: '/membership'
-    },
-    {
-      name: 'News',
-      route: '/news'
     }
   ];
 </script>
