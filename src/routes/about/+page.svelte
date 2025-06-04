@@ -6,7 +6,7 @@
 
 <PaddedBlock>
   <div class="flex pb-4 items-center justify-center">
-    <img src={'/images/courts_1_2.jpg'} alt="Courts 1 & 2" />
+    <img src={'/images/courts_1_2.jpg'} alt="Courts 1 and 2 at Marlborough Badminton Club" />
   </div>
 
   <p>
@@ -15,7 +15,7 @@
   </p>
 
   <div class="flex pt-4 items-center justify-center">
-    <img src={'/images/courts_3_4.jpg'} alt="Courts 3 & 4" />
+    <img src={'/images/courts_3_4.jpg'} alt="Courts 3 and 4 at Marlborough Badminton Club" />
   </div>
 </PaddedBlock>
 
@@ -28,21 +28,17 @@
   <h2>Venue</h2>
 
   <p>
-    We play on four courts at the <a
-      href="https://maps.app.goo.gl/87FBb3coXKZ2Q1tz9"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="text-blue-500 underline hover:text-blue-700">Blessed George Napier School</a
-    >.
+    We play on four courts at the Blessed George Napier School.
+    <a href="https://maps.app.goo.gl/87FBb3coXKZ2Q1tz9" target="_blank" rel="noopener noreferrer" class="text-blue-500 underline hover:text-blue-700"
+      >Blessed George Napier School on Google Maps
+    </a>
   </p>
 
   <p>
-    The school operates a one way traffic system in the evenings and the entrance is off Springfield Road <a
-      href="https://maps.app.goo.gl/5pxMr3SYz7yG4E2v7"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="text-blue-500 underline hover:text-blue-700">here</a
-    >.
+    The school operates a one way traffic system in the evenings and the entrance is on Springfield Road.
+    <a href="https://maps.app.goo.gl/5pxMr3SYz7yG4E2v7" target="_blank" rel="noopener noreferrer" class="text-blue-500 underline hover:text-blue-700"
+      >Entrance on Springfield Road on Google Maps
+    </a>
   </p>
 </PaddedBlock>
 

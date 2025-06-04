@@ -8,6 +8,7 @@
   height="953.46948"
   viewBox="0 0 457.99558 252.27213"
   id="marlborough-badminton-logo"
+  role="img"
   aria-label="marlborough badminton logo"
   xmlns="http://www.w3.org/2000/svg"
 >
