@@ -6,16 +6,16 @@
 
 <PaddedBlock>
   <p>
-    There is a fee of £6 for each session you attend. Your first session as a new member is free. After a 6 session trial you must join the club if you wish to
-    continue playing. The club offers adult and junior memberships. To qualify for junior membership an individual must be 18 or under on 1st September 2024.
+    There is a fee of £7 for each session you attend. Your first session as a new member is free. After a 6 session trial you must join the club if you wish to
+    continue playing.
   </p>
 </PaddedBlock>
 
 <PaddedBlock>
   <p>
-    Membership costs £30 per year for adults and is free for juniors. Members registered with other clubs or on the coaching register are entitled to a 50%
-    reduction in the membership fee. All members can pay a fixed £140 per year for all club night fees. Match fees are not included in the £140 per year
-    membership.
+    Membership costs £30 per year for adults and is free for juniors. To qualify for junior membership an individual must be 18 or under on 1st September 2025.
+    Members registered with other clubs or on the coaching register are entitled to a 50% reduction in the membership fee. All members can pay a fixed £160 per
+    year for all club night fees. Match fees are not included in the £160 per year membership.
   </p>
 </PaddedBlock>
 
@@ -28,5 +28,7 @@
 </PaddedBlock>
 
 <PaddedBlock>
-  <p>The membership year runs from September to August and there are approximately 50 club nights per year. Annual membership fees are due on 1st September.</p>
+  <p>
+    The membership year runs from September to August and there are approximately 50 club nights per year. Annual memberships are due on 1st September 2025.
+  </p>
 </PaddedBlock>

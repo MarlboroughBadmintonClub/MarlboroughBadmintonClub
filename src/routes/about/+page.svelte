@@ -46,3 +46,16 @@
   <h2>League</h2>
   <p>The club has several teams in the Banbury Town Badminton League. League participation is optional.</p>
 </PaddedBlock>
+
+<PaddedBlock>
+  <h2>Club Shirts</h2>
+  <p>
+    We have provisioned club shirts. Please order directly from the <a
+      href="https://pbteamwear.co.uk/collections/marlborough-bc"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-blue-500 underline hover:text-blue-700"
+      >supplier
+    </a>.
+  </p>
+</PaddedBlock>

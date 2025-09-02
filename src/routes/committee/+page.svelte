@@ -5,7 +5,7 @@
 
   const committeeMembers: CommitteeMember[] = [
     {
-      name: 'Jodie Gray',
+      name: 'Raymond Chan',
       role: CommitteeRole.Chair
     },
     {
@@ -14,7 +14,7 @@
       portrait: 'nick_400.jpg'
     },
     {
-      name: 'Es Collins',
+      name: 'Arrash Farahani',
       role: CommitteeRole.Treasurer
     },
     {
@@ -29,16 +29,6 @@
     {
       name: 'Hung Tran',
       role: CommitteeRole.SocialSecretary
-    },
-    {
-      name: 'Phil Hassell',
-      portrait: 'phil_400.jpg'
-    },
-    {
-      name: 'Ruta Seske'
-    },
-    {
-      name: 'Tim Zollman'
     }
   ];
 </script>
