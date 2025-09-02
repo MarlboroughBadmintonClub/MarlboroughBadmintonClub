@@ -43,7 +43,7 @@
 
   <h2 class="py-4">Committee members</h2>
 
-  {#each committeeMembers as member}
+  {#each committeeMembers as member (member.name)}
     <CommitteeListItem {member} />
   {/each}
 </PaddedBlock>

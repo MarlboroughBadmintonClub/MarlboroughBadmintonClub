@@ -6,7 +6,7 @@
 
 <PaddedBlock>
   <div class="flex pb-4 items-center justify-center">
-    <img src={'/images/courts_1_2.jpg'} alt="Courts 1 and 2 at Marlborough Badminton Club" />
+    <img src="/images/courts_1_2.jpg" alt="Courts 1 and 2 at Marlborough Badminton Club" />
   </div>
 
   <p>
@@ -15,7 +15,7 @@
   </p>
 
   <div class="flex pt-4 items-center justify-center">
-    <img src={'/images/courts_3_4.jpg'} alt="Courts 3 and 4 at Marlborough Badminton Club" />
+    <img src="/images/courts_3_4.jpg" alt="Courts 3 and 4 at Marlborough Badminton Club" />
   </div>
 </PaddedBlock>
 
