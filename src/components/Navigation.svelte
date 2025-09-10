@@ -22,6 +22,10 @@
       route: '/history'
     },
     {
+      name: 'League',
+      route: '/league'
+    },
+    {
       name: 'Membership',
       route: '/membership'
     }
