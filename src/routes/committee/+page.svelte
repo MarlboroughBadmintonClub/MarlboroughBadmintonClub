@@ -15,7 +15,8 @@
     },
     {
       name: 'Arrash Farahani',
-      role: CommitteeRole.Treasurer
+      role: CommitteeRole.Treasurer,
+      portrait: 'arrash_400.jpg'
     },
     {
       name: 'Simon Mills',
