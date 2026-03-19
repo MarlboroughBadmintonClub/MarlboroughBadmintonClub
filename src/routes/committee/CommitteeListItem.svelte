@@ -8,7 +8,7 @@
 
   let { member }: Props = $props();
 
-  const portraitPath = `/portraits/${member.portrait}`;
+  const portraitPath = $derived(member.portrait ? `/portraits/${member.portrait}` : undefined);
 
   function roleToString(role: CommitteeRole) {
     switch (role) {
